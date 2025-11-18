@@ -1,49 +1,177 @@
-body { 
-    background-color: ;
-}
-
-.cabecalho{
-    background-color: black;
-    color: whitesmoke;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 25px;
-    padding: 20px;
-    text-align: center;
+/* Estilo geral da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Define a família da fonte para todo o texto da página. */
+    background-color: #f4f4f9;
+    /* Define uma cor de fundo cinza bem clara para a página. */
+    color: #333;
+    /* Define a cor padrão do texto como um cinza escuro. */
     display: flex;
+    /* Ativa o modo "flexbox" para o corpo, que facilita o alinhamento. */
     justify-content: center;
-    gap: 30%;
+    /* Centraliza o conteúdo horizontalmente na página. */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente na página. */
+    padding: 20px;
+    /* Adiciona um espaçamento de 20 pixels em todos os lados do corpo. */
+    margin: 0;
+    /* Remove a margem padrão do navegador. */
 }
 
-#titulo {
 
+/* Container principal que centraliza o conteúdo */
+#principal {
+    background-color: #ffffff;
+    /* Define um fundo branco para a "caixa" de conteúdo. */
+    width: 100%;
+    /* Faz a caixa ocupar 100% da largura disponível. */
+    max-width: 800px;
+    /* Define a largura máxima da caixa para 800 pixels. */
+    padding: 40px;
+    /* Adiciona um espaçamento interno de 40 pixels. */
+    border-radius: 8px;
+    /* Arredonda as bordas da caixa em 8 pixels. */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /*Adiciona uma sombra suave para dar profundidade.*/
+    box-sizing: border-box;
+    /* Garante que o padding não aumente a largura total da caixa.*/
 }
 
+
+/* Estilo para o título principal */
+h1 {
+    color: #0056b3;
+    /* Define a cor do texto do título como azul escuro. */
+    text-align: center;
+    /* Centraliza o texto do título. */
+    font-size: 2em;
+    /* Define o tamanho da fonte como o dobro do tamanho padrão. */
+    margin-bottom: 30px;
+    /* Adiciona um espaço de 30 pixels abaixo do título. */
+}
+
+
+/* Estilo para os parágrafos de texto */
 p {
-    
+    font-size: 1.1em;
+    /* Define o tamanho da fonte um pouco maior que o padrão. */
+    line-height: 1.6;
+    /* Aumenta o espaçamento entre as linhas para melhor leitura. */
 }
 
-.imgcentro {
 
+/* Estilo para a lista do menu principal (index.html) */
+ul {
+    list-style: none;
+    /* Remove os marcadores (bolinhas) da lista. */
+    padding: 0;
+    /* Remove o espaçamento interno padrão da lista. */
 }
 
-nav{
 
+li {
+    margin-bottom: 10px;
+    /* Adiciona um espaço de 10 pixels abaixo de cada item da lista. */
 }
 
-li{
-    display: inline-block;
-   
 
+a {
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links. */
+    color: #007bff;
+    /*  Isso mesmo: considerada uma das mães dos compiladores. /* Define a cor do texto dos links como azul. */
+    font-weight: bold;
+    /* Deixa o texto dos links em negrito. */
+    display: block;
+    /* Faz o link se comportar como um bloco, ocupando toda a largura. */
+    padding: 15px;
+    /* Adiciona um espaçamento interno ao link (aumenta a área clicável). */
+    border: 1px solid #ddd;
+    /* Adiciona uma borda cinza clara ao redor do link. */
+    border-radius: 5px;
+    /* Arredonda as bordas do link. */
+    background-color: #f8f9fa;
+    /* Define uma cor de fundo cinza muito clara para o link. */
+    transition: background-color 0.3s, color 0.3s;
+    /* Cria uma transição suave de 0.3s para a cor de fundo e do texto. */
 }
 
-li a{
-    font-size: 50px;
 
+/* Efeito ao passar o mouse sobre os links */
+a:hover {
+    background-color: #0056b3;
+    /* Muda a cor de fundo para azul escuro quando o mouse está sobre o link. */
+    color: #ffffff;
+    /* Muda a cor do texto para branco quando o mouse está sobre o link. */
 }
 
-button{
-    font-size: 16px;
-    color: rgb(255, 0, 132);
+
+/* Estilo padrão para qualquer imagem que você adicionar */
+img {
+    max-width: 100%;
+    /* Garante que a imagem nunca ultrapasse a largura do container. */
+    height: auto;
+    /* Mantém a proporção da imagem ao ajustar a largura. */
+    display: block;
+    /* Faz a imagem se comportar como um bloco para aplicar margens. */
+    margin: 20px auto;
+    /* Adiciona margem no topo/base e centraliza horizontalmente. */
+    border-radius: 8px;
+    /* Arredonda as bordas da imagem. */
+    width: 500px;
+}
+
+
+/* Seletor vazio que você pediu, pronto para uso futuro */
+.imgindex {
+    /* Você pode adicionar estilos específicos para uma imagem no index aqui. */
+}
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* Define a família da fonte para todo o texto da página. */
+        background-color: #f4f4f9;
+        /* Define uma cor de fundo cinza bem clara para a página. */
+        color: #333;
+        /* Define a cor padrão do texto como um cinza escuro. */
+        /*   display:block ;                             /*Ativa o modo "flexbox" para o corpo, que facilita o alinhamento. */
+        /*  justify-content: center;                   /* Centraliza o conteúdo horizontalmente na página. */
+        /* align-items: center;                       Centraliza o conteúdo verticalmente na página.*/
+        padding: 5px;
+        /* Adiciona um espaçamento de 20 pixels em todos os lados do corpo. */
+        margin: 0;
+        /* Remove a margem padrão do navegador. */
+    }
+
+
+    #principal {
+        background-color: #ffffff;
+        /* Define um fundo branco para a "caixa" de conteúdo. */
+        /* width: 100%;                               /* Faz a caixa ocupar 100% da largura disponível. */
+        /*  max-width: 800px;                          /* Define a largura máxima da caixa para 800 pixels. */
+        padding: 5px;
+        /* Adiciona um espaçamento interno de 40 pixels. */
+        border-radius: 5px;
+        /* Arredonda as bordas da caixa em 8 pixels. */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        /*Adiciona uma sombra suave para dar profundidade.*/
+        box-sizing: border-box;
+        /* Garante que o padding não aumente a largura total da caixa.*/
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }
